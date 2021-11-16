@@ -1,0 +1,99 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    font-family: monospace;
+}
+
+.block {
+    background-color: white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 0;
+}
+
+.block-hero {
+    background-color: rgb(229, 68, 47);
+    text-align: center;
+}
+.block-summary {
+    justify-content: center;
+    background-color: black;
+    color: rgb(238, 238, 238);
+    font-weight: 700;
+    text-align: center;
+}
+
+.block-summary h4 {
+    margin: 4px 0;
+}
+
+.block-schedule {
+}
+.block-faq {
+    background-color: rgb(238, 238, 238);
+}
+
+.block-faq--table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    column-gap: 12px;
+    justify-content: space-between;
+}
+
+.block-faq--col {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin-bottom: 24px;
+}
+
+.block-faq--row__title {
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
+
+.block-footer {
+}
+
+.img-element {
+    display: flex;
+    justify-content: center;
+}
+
+/* Timer */
+
+li {
+    display: inline-block;
+    font-size: 1.25em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+}
+
+li span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+img {
+    text-align: center;
+}
+/* Mobile breakpoints */
+@media screen and (max-width: 767px) {
+    .block-faq--col {
+        width: 100%;
+    }
+
+    li {
+        font-size: calc(1.125rem * var(--smaller));
+    }
+
+    li span {
+        font-size: calc(3.375rem * var(--smaller));
+    }
+}
